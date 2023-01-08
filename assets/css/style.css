@@ -458,10 +458,18 @@ html, body {
   padding-left: 30px;
   padding: 0 15px;
   font-size: 40px;
+  animation-name: hello;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
+}
+
+@keyframes hello{
+  from{font-size: 100px;}
+  to{font-size: 40px;}
 }
 
 .hero-content p {
