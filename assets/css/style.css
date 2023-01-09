@@ -452,6 +452,15 @@ html, body {
   position: relative;
 }
 
+.hero-content img {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+
+}
+
 
 .hero-content h1 {
   width: 100%;
