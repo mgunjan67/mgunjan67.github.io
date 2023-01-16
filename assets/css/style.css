@@ -468,8 +468,8 @@ html, body {
   padding: 0 15px;
   font-size: 40px;
   animation-name: hello;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-delay: 1s;
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
