@@ -473,5 +473,11 @@
     "photos": "User approved the 25 saved photo results and photo data on 2026-11-08. Neutral filenames and room titles; no addresses or client comparison edits.",
     "featureConcepts": "Three requested ImageGen feature concepts are visibly identified; they are not Photo Finisher pipeline outputs.",
     "styleLab": "24 browser color-grade previews created for this portfolio. Art-direction explorations, not 24 implemented pipeline presets."
+  },
+  "interactiveProvenance": {
+    "experience.js": {
+      "kind": "Original portfolio interaction",
+      "notes": "Homepage photos use the approved saved collection. The spatial scene uses invented geometry and is labeled as a workflow illustration, not employer output or customer data."
+    }
   }
 }

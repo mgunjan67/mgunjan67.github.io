@@ -1,5 +1,7 @@
 # Portfolio content boundary
 
+The user chose all three visual directions: cinematic dark, bold editorial, and playful 3D. Lead with functional photo comparison and an explorable original spatial scene. Keep the text short. The spatial scene must use invented illustrative geometry, distinct from employer output or customer data.
+
 The user's latest design direction is a concise portfolio. Keep the homepage curated and visual: brief project captions, a short research list, a small bio, and contact. Put collections and optional explorations on project pages. Avoid expanding the homepage into detailed project reports, capability catalogs, process sections, or repeated badges.
 
 Keep the presentation visually expressive: layered project previews, restrained depth and motion, and the original avatar plus consistent thinking, laptop-building, and greeting poses in suitable sections. Do not fall back to a plain image grid or reuse one avatar pose everywhere. Respect reduced-motion preferences.

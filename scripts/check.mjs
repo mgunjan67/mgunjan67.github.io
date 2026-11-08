@@ -6,7 +6,7 @@ const root=process.cwd(),errors=[],files=['index.html','photo-finisher.html','an
 const pages=new Map(await Promise.all(files.map(async file=>[file,await readFile(file,'utf8')])));
 const assets=JSON.parse(await readFile('public-content.json','utf8'));
 const allowlist=new Set(assets.assets),context={window:{}};
-for(const file of ['app.js','photo-lab.js','showcase.js','projects.js'])new Script(await readFile(file,'utf8'),{filename:file});
+for(const file of ['app.js','photo-lab.js','showcase.js','projects.js','experience.js'])new Script(await readFile(file,'utf8'),{filename:file});
 runInNewContext(await readFile('showcase.js','utf8'),context);
 runInNewContext(await readFile('projects.js','utf8'),context);
 const {scenes,features}=context.window.PHOTO_SHOWCASE,projects=context.window.PORTFOLIO_PROJECTS;
