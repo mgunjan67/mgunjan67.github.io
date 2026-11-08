@@ -87,7 +87,9 @@
     "media/photos/scene-25-thumb.webp",
     "media/features/twilight.webp",
     "media/features/wall-finish.webp",
-    "media/features/staging.webp"
+    "media/features/staging.webp",
+    "media/spatial-study.svg",
+    "media/progress-study.svg"
   ],
   "sources": {
     "landslide": [
@@ -435,6 +437,14 @@
     "media/features/staging.webp": {
       "kind": "ImageGen concept requested by user",
       "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/spatial-study.svg": {
+      "kind": "Original generic workflow illustration",
+      "notes": "Invented geometry. No employer or customer imagery or data."
+    },
+    "media/progress-study.svg": {
+      "kind": "Original generic workflow illustration",
+      "notes": "Invented geometry. No employer or customer imagery or data."
     }
   },
   "authorization": {

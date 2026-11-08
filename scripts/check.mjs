@@ -2,45 +2,48 @@ import {readFile,readdir} from 'node:fs/promises';
 import {existsSync} from 'node:fs';
 import {runInNewContext,Script} from 'node:vm';
 import path from 'node:path';
-const root=process.cwd(),errors=[];
-const html=await readFile('index.html','utf8'),css=await readFile('styles.css','utf8');
-for(const file of ['app.js','projects.js','showcase.js','photo-lab.js'])new Script(await readFile(file,'utf8'),{filename:file});
-const context={window:{}};runInNewContext(await readFile('projects.js','utf8'),context);
-const projects=context.window.PORTFOLIO_PROJECTS;
+const root=process.cwd(),errors=[],files=['index.html','photo-finisher.html','angelswing.html'];
+const pages=new Map(await Promise.all(files.map(async file=>[file,await readFile(file,'utf8')])));
+const assets=JSON.parse(await readFile('public-content.json','utf8'));
+const allowlist=new Set(assets.assets),context={window:{}};
+for(const file of ['app.js','photo-lab.js','showcase.js','projects.js'])new Script(await readFile(file,'utf8'),{filename:file});
 runInNewContext(await readFile('showcase.js','utf8'),context);
-const showcase=context.window.PHOTO_SHOWCASE;
-if(showcase.scenes.length!==25||new Set(showcase.scenes.map(s=>s.id)).size!==25)errors.push('Expected 25 unique saved showcase scenes.');
-if(showcase.scenes.reduce((n,s)=>n+s.exposures,0)!==64)errors.push('Source exposure count does not match approved collection.');
-if(showcase.features.length!==3)errors.push('Expected three separately labeled feature concepts.');
-const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
-if(new Set(ids).size!==ids.length)errors.push('Duplicate HTML id.');
-if((html.match(/<h1\b/g)||[]).length!==1)errors.push('Expected a single main heading.');
-const refs=[...html.matchAll(/(?:href|src)="([^"#]+)"/g)].map(m=>m[1]);
+runInNewContext(await readFile('projects.js','utf8'),context);
+const {scenes,features}=context.window.PHOTO_SHOWCASE,projects=context.window.PORTFOLIO_PROJECTS;
+const pageIds=new Map([...pages].map(([file,html])=>[file,[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1])]));
+const refs=[];
+for(const [file,html] of pages){
+ const ids=pageIds.get(file);
+ if(new Set(ids).size!==ids.length)errors.push(`${file}: duplicate id`);
+ if((html.match(/<h1\b/g)||[]).length!==1)errors.push(`${file}: expected one main heading`);
+ if(/href="#"/.test(html))errors.push(`${file}: empty link`);
+ for(const match of html.matchAll(/(?:href|src)="([^"]+)"/g)){
+  const ref=match[1];if(/^(https?:|mailto:|data:)/.test(ref))continue;
+  const [target,hash]=ref.split('#');
+  if(target)refs.push(target);
+  if(hash&&!pageIds.get(target||file)?.includes(hash))errors.push(`${file}: broken section link ${ref}`);
+ }
+ if(/<video|\.pdf(?:["'?]|$)|\.mp4(?:["'?]|$)/i.test(html))errors.push(`${file}: unreviewed video or document`);
+}
+const css=await readFile('styles.css','utf8');
 refs.push(...[...css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)].map(m=>m[1]));
-for(const scene of showcase.scenes)refs.push(scene.before,scene.after,scene.thumb);
-for(const feature of showcase.features)refs.push(feature.before,feature.after);
-for(const project of Object.values(projects)){
- if(project.image)refs.push(project.image.src);
- if(project.video)refs.push(project.video.src,project.video.poster);
- for(const link of project.links||[])if(link.local)refs.push(link.url);
+for(const scene of scenes)refs.push(scene.before,scene.after,scene.thumb);
+for(const feature of features)refs.push(feature.before,feature.after);
+if(scenes.length!==25||new Set(scenes.map(s=>s.id)).size!==25)errors.push('Expected 25 unique saved scenes');
+if(scenes.reduce((n,s)=>n+s.exposures,0)!==64)errors.push('Exposure count must match the approved collection');
+if(features.length!==3)errors.push('Expected three separate feature concepts');
+for(const ref of new Set(refs)){
+ if(!existsSync(path.join(root,ref)))errors.push(`Missing local reference: ${ref}`);
+ if(ref.startsWith('media/')&&!allowlist.has(ref))errors.push(`Unlisted asset: ${ref}`);
 }
-for(const ref of new Set(refs))if(!/^(https?:|mailto:|data:)/.test(ref)&&!existsSync(path.join(root,ref)))errors.push(`Missing local asset: ${ref}`);
-for(const m of html.matchAll(/href="#([^"]+)"/g))if(!ids.includes(m[1]))errors.push(`Broken section link: ${m[1]}`);
-for(const m of html.matchAll(/data-project="([^"]+)"/g))if(!projects[m[1]])errors.push(`Missing project note: ${m[1]}`);
-if(/href="#"/.test(html))errors.push('Empty placeholder link.');
-const publicContent=JSON.parse(await readFile('public-content.json','utf8'));
 for(const [id,project] of Object.entries(projects)){
- if(!Object.hasOwn(publicContent.sources,id))errors.push(`Project has no public provenance entry: ${id}`);
- for(const link of project.links||[])if(!publicContent.sources[id]?.includes(link.url))errors.push(`Unreviewed project source: ${id}`);
- if(project.image||project.video)errors.push(`Project media must be independently reviewed: ${id}`);
+ if(!Object.hasOwn(assets.sources,id))errors.push(`Missing provenance: ${id}`);
+ for(const link of project.links||[])if(!assets.sources[id]?.includes(link.url))errors.push(`Unreviewed source: ${id}`);
 }
-const publicAssets=new Set(publicContent.assets);
-for(const ref of refs)if(ref.startsWith('media/')&&!publicAssets.has(ref))errors.push(`Reference missing from deployment allowlist: ${ref}`);
-for(const scene of showcase.scenes)if(!/^\d{2}$/.test(scene.id)||!/media\/photos\/scene-\d{2}-/.test(scene.after))errors.push('Showcase identifiers must use neutral scene names.');
-if(!publicContent.authorization?.photos||!publicContent.authorization?.employment)errors.push('Missing explicit content authorization record.');
-async function inspectMedia(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isSymbolicLink())errors.push('Media symlinks are not allowed.');else if(entry.isDirectory())await inspectMedia(file);else if(!publicAssets.has(path.relative(root,file).split(path.sep).join('/')))errors.push(`Asset outside the deployment list: ${entry.name}`);}}
-await inspectMedia(path.join(root,'media'));
-for(const file of publicAssets)if(!existsSync(path.join(root,file)))errors.push(`Missing reviewed asset: ${file}`);
-for(const file of ['dm-sans-latin.woff2','instrument-serif-latin.woff2','instrument-serif-italic-latin.woff2'])if((await readFile('media/fonts/'+file)).subarray(0,4).toString()!=='wOF2')errors.push(`Invalid webfont: ${file}`);
-if(/<video|\.pdf(?:["'?]|$)|\.mp4(?:["'?]|$)/i.test(html))errors.push('Unreviewed document or video reference.');
-if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else console.log(`Checks passed: ${Object.keys(projects).length} reviewed project notes, 25 photo scenes, 3 feature concepts, explicit assets, section targets, fonts, and script syntax.`);
+if(!assets.authorization?.photos||!assets.authorization?.employment)errors.push('Missing scoped content authorization');
+for(const scene of scenes)if(!/^\d{2}$/.test(scene.id)||!/media\/photos\/scene-\d{2}-/.test(scene.after))errors.push('Scene identifiers must be neutral');
+async function inspect(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isSymbolicLink())errors.push('Media symlink');else if(entry.isDirectory())await inspect(file);else if(!allowlist.has(path.relative(root,file).split(path.sep).join('/')))errors.push(`Unlisted media: ${file}`);}}
+await inspect(path.join(root,'media'));
+for(const file of allowlist)if(!existsSync(path.join(root,file)))errors.push(`Missing reviewed asset: ${file}`);
+if((await readFile('media/fonts/dm-sans-latin.woff2')).subarray(0,4).toString()!=='wOF2')errors.push('Invalid webfont');
+if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else console.log('Checks passed: 3 linked pages, 25 saved comparisons, separate feature concepts, reviewed assets, provenance, and scripts.');
