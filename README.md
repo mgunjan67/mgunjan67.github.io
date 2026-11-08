@@ -1,6 +1,6 @@
-# Gunjan Kumar Mishra — Research & Open Tools
+# Gunjan Kumar Mishra — Research & Products
 
-An editorial portfolio with two main sections: public research and independent products/open tools. Warm ivory, forest ink, terracotta, self-hosted Instrument Serif and DM Sans, and an original 3D avatar form the visual identity.
+A portfolio connecting research and product engineering. Cool white, navy, lavender, self-hosted DM Sans, and the original 3D avatar form the visual identity. Selected Angelswing case studies and the Photo Finisher showcase lead into public research and open tools.
 
 ## Run and build
 
@@ -31,12 +31,16 @@ Descriptions summarize public versions and link to original sources. They do not
 
 ## Content and assets
 
-`index.html` holds the main page, `projects.js` contains the project notes, `app.js` handles the interface and interactive demos, and `styles.css` controls the visual design. `public-content.json` records public source URLs and the deployment asset list. Read `AGENTS.md` before adding content.
+`index.html` holds the main page, `projects.js` contains the project notes, `showcase.js` contains the neutral photo catalog, `app.js` handles navigation and project dialogs, `photo-lab.js` handles photo comparisons and style exploration, and `styles.css` controls the visual design. `public-content.json` records provenance, scoped user authorization, and the exact deployment asset list. Read `AGENTS.md` before adding content.
 
-The 3D avatar was generated with the built-in image_gen tool using user-supplied public Instagram portrait references and the earlier public portfolio portrait. The raw reference photos are not deployed. The hero, about, and contact sections share one optimized WebP asset. All other visual studies and product-card illustrations are original website artwork. They are labelled as illustrations rather than presented as screenshots or measured results. Font license files are included in `media/fonts/`. No local-project screenshots, videos, internal resumes, customer data, or private project files are included. Current CV requests use an email link. Project-enquiry options open a prefilled email draft without collecting data on a server.
+The original 3D avatar is preserved. It was generated with the built-in image_gen tool using user-supplied public portrait references; raw reference photos are not deployed. Hero, about, and contact share one optimized WebP. Font licenses are included. CV requests and project enquiries use email links, with no server collection.
 
-Employment appears as a brief professional entry. Independent projects are described separately. No employer case studies are included.
+The user explicitly authorized limited high-level Angelswing project context on 2026-11-08. Two main case studies cover spatial understanding and construction progress, with a smaller visual-review note. Original generic illustrations explain workflows. Employer/customer screenshots, internal names, private implementation, coordinates, and unverified metrics are excluded.
+
+The user also explicitly authorized the real estate photo collection: 25 saved results from 64 source exposures. Web copies have neutral scene filenames and stripped embedded metadata. Property addresses, full-resolution originals, and third-party comparison edits are excluded. Gallery filters cover interiors, outdoors, and workspaces; each scene compares one source exposure with the saved result.
+
+Three new feature concepts (virtual twilight, wall repaint, and virtual restaging) were created with built-in ImageGen from the approved photographs. They are visibly identified as illustrations of selected items from the 17-feature proposal, separate from Photo Finisher pipeline results. The style lab implements 24 named browser color grades for art-direction exploration. It does not claim 24 production presets; the verified core finishing profiles are Bright natural, Soft natural, and Warm natural.
 
 ## Interface
 
-The site includes responsive navigation, research filters, keyboard-accessible native dialogs, direct links such as `#project/atlas`, citation copying, focus restoration, browser-history dismissal, reduced-motion support, and search/social metadata. Fonts are served locally, with no analytics or third-party runtime requests.
+The site includes responsive navigation, research and photo filters, native dialogs, draggable and keyboard-operated comparisons, gallery arrow-key browsing, direct project links such as `#project/atlas`, citation copying, focus restoration, browser-history dismissal, reduced-motion support, and social metadata. Photo thumbnails load lazily; large comparison images load when opened. Fonts are local, with no analytics or third-party runtime requests.

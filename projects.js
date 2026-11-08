@@ -1,5 +1,41 @@
-/* Descriptions use the public sources listed in public-content.json. */
+/* Public sources and explicit user-approved summaries are recorded in public-content.json. */
 window.PORTFOLIO_PROJECTS = {
+  'angelswing-spatial': {
+    section:'products',eyebrow:'Angelswing / Spatial intelligence',title:'From drone imagery to spatial understanding.',
+    summary:'Connecting a point in a drone photograph with its place in a 3D site.',status:'Research Engineer · Selected professional work',
+    context:'A photograph is intuitive to inspect. A spatial model provides another kind of context. My work connects these views so people can investigate imagery and understand where an observation belongs.',
+    approach:['Explore image-to-model localization and selected-point spatial mapping.','Make spatial relationships inspectable through a browser visualization.','Develop evaluation tools to examine behavior across examples.'],
+    role:'Research and engineering across computer vision, spatial reasoning, evaluation tooling, and the operator workflow.',
+    boundary:'The visual on this page is an original workflow illustration using an invented site. This short case study describes my contribution at a high level.',boundaryTitle:'About this case study',
+    stack:['Computer vision','2D ↔ 3D','Spatial tools'],links:[]
+  },
+  'angelswing-progress': {
+    section:'products',eyebrow:'Angelswing / Visual progress',title:'A clearer view of what changed.',
+    summary:'Making images captured over time easier to compare, even when the viewpoint changes.',status:'Research Engineer · Selected professional work',
+    context:'Construction imagery carries a useful story over time. Viewpoint changes can make that story harder to read. I developed alignment workflows that bring images toward a common frame for clearer progress comparisons and time-lapse viewing.',
+    approach:['Study visual alignment across images captured at different times.','Build workflows that make construction progress easier to inspect.','Review the resulting comparisons for visual continuity.'],
+    role:'Research and implementation of image-registration and time-lapse alignment workflows, including demonstrated visual outputs.',
+    boundary:'The three stages shown here are original schematic illustrations. They explain the workflow without showing a customer site or internal product interface.',boundaryTitle:'About this case study',
+    stack:['Image registration','Visual comparison','Time-lapse'],links:[]
+  },
+  'angelswing-review': {
+    section:'products',eyebrow:'Angelswing / Visual intelligence',title:'Visual intelligence, with a human in the loop.',
+    summary:'Exploring how visual models can help people investigate site imagery in context.',status:'Research exploration · Review prototype',
+    context:'Useful visual intelligence needs an inspectable path from an observation to supporting evidence. This exploration focuses on a review workflow in which a person can examine imagery and investigate what a model has highlighted.',
+    approach:['Keep visual evidence accessible during review.','Give observations context rather than presenting isolated labels.','Make human investigation part of the workflow.'],
+    role:'Research exploration and prototyping of a visual review workflow.',
+    boundary:'This note describes an early review prototype. It does not assert an operational safety-alert capability or deployment outcome.',boundaryTitle:'Project stage',
+    stack:['Visual review','Human in the loop','Prototyping'],links:[]
+  },
+  'photo-finisher': {
+    section:'photo-finisher',eyebrow:'Independent product / Photo Finisher',title:'Better light. Same place.',
+    summary:'A real estate photo-editing workflow that brings exposure balancing and natural finishing into a visual product experience.',status:'Independent product · 25 saved scene results',
+    context:'Property photographs need to communicate a space clearly. The project brings together multi-exposure finishing, natural color directions, and visual comparison. This collection covers interiors, gardens, exteriors, and commercial workspaces.',
+    approach:['Work from exposure groups to balance interior light and window views.','Explore Bright natural, Soft natural, and Warm natural finishing directions.','Make before-and-after comparison and visual review central to the experience.'],
+    role:'Independent product and engineering work across image processing, finishing workflows, and the review experience.',
+    boundary:'The 25 gallery scenes are saved project results from 64 source exposures. The feature lab contains three newly generated ImageGen illustrations of proposed features. The 24 style directions are interactive browser color grades for exploration.',boundaryTitle:'What you are exploring',
+    stack:['Python','Image processing','Multi-exposure','Visual review'],links:[]
+  },
   landslide: {
     section:'research', eyebrow:'Research / Fibre-optic sensing', title:'More sensors. Better evidence?',
     summary:'How should we evaluate landslide monitoring when many sensor measurements describe the same physical event?',

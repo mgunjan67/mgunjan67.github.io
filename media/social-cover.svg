@@ -1,8 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<rect width="1200" height="630" fill="#f5f3ec"/><path d="M56 92H1144M56 562H1144" stroke="#d5d9cd"/>
-<text x="56" y="63" font-family="monospace" font-size="12" letter-spacing="2" fill="#202820">GUNJAN KUMAR MISHRA</text><text x="1144" y="63" text-anchor="end" font-family="monospace" font-size="10" letter-spacing="1" fill="#697062">RESEARCH ENGINEER &amp; INDEPENDENT BUILDER</text>
-<text x="55" y="218" font-family="Georgia,serif" font-size="72" fill="#202820">Good questions.</text><text x="55" y="305" font-family="Georgia,serif" font-size="72" fill="#202820">Thoughtful code.</text><text x="55" y="397" font-family="Georgia,serif" font-style="italic" font-size="79" fill="#c8512c">Useful things.</text>
-<text x="59" y="478" font-family="monospace" font-size="11" letter-spacing="1.5" fill="#697062">PUBLIC RESEARCH × INDEPENDENT BUILDS</text>
-<path d="M808 550V290A164 164 0 0 1 1136 290V550Z" fill="#e1e6d8"/><ellipse cx="972" cy="281" rx="158" ry="166" fill="none" stroke="#89977c" stroke-opacity=".5" stroke-width=".6"/><image href="gunjan-avatar-3d.webp" x="754" y="102" width="432" height="457" preserveAspectRatio="xMidYMax meet"/>
-<text x="56" y="597" font-family="monospace" font-size="11" letter-spacing="1.5" fill="#697062">KATHMANDU, NEPAL</text><text x="1144" y="597" text-anchor="end" font-family="monospace" font-size="11" letter-spacing="1.5" fill="#697062">LET’S BUILD SOMETHING USEFUL.</text>
+<rect width="1200" height="630" fill="#f7f8fc"/>
+<path d="M60 95H1140M60 553H1140" stroke="#dfe3ee"/>
+<rect x="60" y="34" width="38" height="38" rx="12" fill="#171c32"/><text x="69" y="59" fill="white" font-family="Arial,sans-serif" font-size="27" font-weight="bold">g.</text>
+<text x="113" y="57" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#171c32">GUNJAN MISHRA</text><text x="1140" y="57" text-anchor="end" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.2" fill="#646b80">RESEARCH ENGINEER &amp; BUILDER</text>
+<text x="60" y="165" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#6851df">TURNING COMPLEX IDEAS INTO USEFUL THINGS.</text>
+<text x="56" y="272" font-family="Arial,sans-serif" font-size="73" font-weight="bold" letter-spacing="-4" fill="#171c32">Research depth.</text><text x="56" y="355" font-family="Arial,sans-serif" font-size="73" font-weight="bold" letter-spacing="-4" fill="#6851df">Product instinct.</text>
+<text x="60" y="427" font-family="Arial,sans-serif" font-size="15" fill="#646b80">Computer vision. Scientific ML. Product engineering.</text>
+<rect x="60" y="461" width="158" height="35" rx="17.5" fill="#edeafd"/><text x="139" y="483" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#6851df">RESEARCH × PRODUCTS</text>
+<path d="M760 552V306A180 180 0 0 1 1120 306V552Z" fill="#e7e2fc"/><ellipse cx="940" cy="328" rx="195" ry="162" fill="none" stroke="#c9bfea"/><image href="gunjan-avatar-3d.webp" x="723" y="102" width="448" height="451" preserveAspectRatio="xMidYMax meet"/>
+<text x="60" y="593" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5" fill="#646b80">KATHMANDU, NEPAL</text><text x="1140" y="593" text-anchor="end" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5" fill="#6851df">LET’S BUILD SOMETHING.</text>
 </svg>

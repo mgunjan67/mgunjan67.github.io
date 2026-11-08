@@ -1,5 +1,5 @@
 {
-  "description": "Public-source portfolio content and explicit deployment asset list.",
+  "description": "Public sources, user-approved employment summaries and photos, and exact deployment assets.",
   "assets": [
     "media/favicon.svg",
     "media/social-cover.jpg",
@@ -9,7 +9,85 @@
     "media/fonts/instrument-serif-italic-latin.woff2",
     "media/fonts/DM-Sans-OFL.txt",
     "media/fonts/Instrument-Serif-OFL.txt",
-    "media/gunjan-avatar-3d.webp"
+    "media/gunjan-avatar-3d.webp",
+    "media/photos/scene-01-result.webp",
+    "media/photos/scene-01-input.webp",
+    "media/photos/scene-01-thumb.webp",
+    "media/photos/scene-02-result.webp",
+    "media/photos/scene-02-input.webp",
+    "media/photos/scene-02-thumb.webp",
+    "media/photos/scene-03-result.webp",
+    "media/photos/scene-03-input.webp",
+    "media/photos/scene-03-thumb.webp",
+    "media/photos/scene-04-result.webp",
+    "media/photos/scene-04-input.webp",
+    "media/photos/scene-04-thumb.webp",
+    "media/photos/scene-05-result.webp",
+    "media/photos/scene-05-input.webp",
+    "media/photos/scene-05-thumb.webp",
+    "media/photos/scene-06-result.webp",
+    "media/photos/scene-06-input.webp",
+    "media/photos/scene-06-thumb.webp",
+    "media/photos/scene-07-result.webp",
+    "media/photos/scene-07-input.webp",
+    "media/photos/scene-07-thumb.webp",
+    "media/photos/scene-08-result.webp",
+    "media/photos/scene-08-input.webp",
+    "media/photos/scene-08-thumb.webp",
+    "media/photos/scene-09-result.webp",
+    "media/photos/scene-09-input.webp",
+    "media/photos/scene-09-thumb.webp",
+    "media/photos/scene-10-result.webp",
+    "media/photos/scene-10-input.webp",
+    "media/photos/scene-10-thumb.webp",
+    "media/photos/scene-11-result.webp",
+    "media/photos/scene-11-input.webp",
+    "media/photos/scene-11-thumb.webp",
+    "media/photos/scene-12-result.webp",
+    "media/photos/scene-12-input.webp",
+    "media/photos/scene-12-thumb.webp",
+    "media/photos/scene-13-result.webp",
+    "media/photos/scene-13-input.webp",
+    "media/photos/scene-13-thumb.webp",
+    "media/photos/scene-14-result.webp",
+    "media/photos/scene-14-input.webp",
+    "media/photos/scene-14-thumb.webp",
+    "media/photos/scene-15-result.webp",
+    "media/photos/scene-15-input.webp",
+    "media/photos/scene-15-thumb.webp",
+    "media/photos/scene-16-result.webp",
+    "media/photos/scene-16-input.webp",
+    "media/photos/scene-16-thumb.webp",
+    "media/photos/scene-17-result.webp",
+    "media/photos/scene-17-input.webp",
+    "media/photos/scene-17-thumb.webp",
+    "media/photos/scene-18-result.webp",
+    "media/photos/scene-18-input.webp",
+    "media/photos/scene-18-thumb.webp",
+    "media/photos/scene-19-result.webp",
+    "media/photos/scene-19-input.webp",
+    "media/photos/scene-19-thumb.webp",
+    "media/photos/scene-20-result.webp",
+    "media/photos/scene-20-input.webp",
+    "media/photos/scene-20-thumb.webp",
+    "media/photos/scene-21-result.webp",
+    "media/photos/scene-21-input.webp",
+    "media/photos/scene-21-thumb.webp",
+    "media/photos/scene-22-result.webp",
+    "media/photos/scene-22-input.webp",
+    "media/photos/scene-22-thumb.webp",
+    "media/photos/scene-23-result.webp",
+    "media/photos/scene-23-input.webp",
+    "media/photos/scene-23-thumb.webp",
+    "media/photos/scene-24-result.webp",
+    "media/photos/scene-24-input.webp",
+    "media/photos/scene-24-thumb.webp",
+    "media/photos/scene-25-result.webp",
+    "media/photos/scene-25-input.webp",
+    "media/photos/scene-25-thumb.webp",
+    "media/features/twilight.webp",
+    "media/features/wall-finish.webp",
+    "media/features/staging.webp"
   ],
   "sources": {
     "landslide": [
@@ -33,7 +111,11 @@
     "ball-vision": [
       "https://github.com/mgunjan67/ball_detection_yolov9_custom"
     ],
-    "signal-sketch": []
+    "signal-sketch": [],
+    "angelswing-spatial": [],
+    "angelswing-progress": [],
+    "angelswing-review": [],
+    "photo-finisher": []
   },
   "visualProvenance": {
     "media/gunjan-avatar-3d.webp": {
@@ -41,6 +123,324 @@
       "reference": "https://www.instagram.com/gaurav.__.gunjan/",
       "tool": "Built-in image_gen",
       "notes": "Source photographs are not included in the deployment."
+    },
+    "media/photos/scene-01-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-01-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-01-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-02-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-02-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-02-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-03-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-03-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-03-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-04-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-04-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-04-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-05-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-05-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-05-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-06-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-06-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-06-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-07-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-07-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-07-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-08-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-08-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-08-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-09-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-09-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-09-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-10-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-10-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-10-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-11-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-11-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-11-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-12-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-12-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-12-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-13-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-13-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-13-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-14-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-14-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-14-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-15-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-15-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-15-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-16-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-16-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-16-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-17-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-17-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-17-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-18-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-18-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-18-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-19-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-19-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-19-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-20-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-20-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-20-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-21-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-21-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-21-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-22-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-22-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-22-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-23-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-23-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-23-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-24-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-24-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-24-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-25-result.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-25-input.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/photos/scene-25-thumb.webp": {
+      "kind": "User-approved photo showcase; optimized web copy",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/features/twilight.webp": {
+      "kind": "ImageGen concept requested by user",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/features/wall-finish.webp": {
+      "kind": "ImageGen concept requested by user",
+      "notes": "Metadata stripped. Property identifiers excluded."
+    },
+    "media/features/staging.webp": {
+      "kind": "ImageGen concept requested by user",
+      "notes": "Metadata stripped. Property identifiers excluded."
     }
+  },
+  "authorization": {
+    "employment": "User approved limited high-level Angelswing context on 2026-11-08. Original illustrations only; no employer imagery, private implementation, metrics, or code.",
+    "photos": "User approved the 25 saved photo results and photo data on 2026-11-08. Neutral filenames and room titles; no addresses or client comparison edits.",
+    "featureConcepts": "Three requested ImageGen feature concepts are visibly identified; they are not Photo Finisher pipeline outputs.",
+    "styleLab": "24 browser color-grade previews created for this portfolio. Art-direction explorations, not 24 implemented pipeline presets."
   }
 }
