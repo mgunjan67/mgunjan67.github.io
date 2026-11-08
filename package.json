@@ -2,7 +2,7 @@
   "name": "gunjan-research-products-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "A concise visual portfolio with focused product pages and selected research.",
+  "description": "A concise portfolio with layered project previews, expressive avatars, and selected research.",
   "scripts": {"dev": "node scripts/serve.mjs", "build": "node scripts/build.mjs", "check": "node scripts/check.mjs"},
   "engines": {"node": ">=20"}
 }

@@ -2,6 +2,8 @@
 
 The user's latest design direction is a concise portfolio. Keep the homepage curated and visual: brief project captions, a short research list, a small bio, and contact. Put collections and optional explorations on project pages. Avoid expanding the homepage into detailed project reports, capability catalogs, process sections, or repeated badges.
 
+Keep the presentation visually expressive: layered project previews, restrained depth and motion, and the original avatar plus consistent thinking, laptop-building, and greeting poses in suitable sections. Do not fall back to a plain image grid or reuse one avatar pose everywhere. Respect reduced-motion preferences.
+
 Showcase public research, independently owned work, and the explicitly approved material below. Local access alone does not authorize publishing unrelated material.
 
 The user's 2026-11-08 instruction explicitly approves limited high-level Angelswing project summaries as highlights. Explain contributions to spatial understanding, construction progress, and visual review using original generic workflow illustrations. Do not publish employer screenshots, customer imagery, internal names, private methods or architecture, code, model details, coordinates, or unverified metrics.

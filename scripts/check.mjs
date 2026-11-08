@@ -25,7 +25,9 @@ for(const [file,html] of pages){
  }
  if(/<video|\.pdf(?:["'?]|$)|\.mp4(?:["'?]|$)/i.test(html))errors.push(`${file}: unreviewed video or document`);
 }
-const css=await readFile('styles.css','utf8');
+const css=(await Promise.all(['styles.css','visual.css'].map(f=>readFile(f,'utf8')))).join('\n');
+const homeAvatars=[...pages.get('index.html').matchAll(/src="(media\/(?:avatars\/gunjan-[^"]+|gunjan-avatar-3d)\.webp)"/g)].map(m=>m[1]);
+if(new Set(homeAvatars).size!==4)errors.push('Homepage must use the original avatar and three distinct pose variants');
 refs.push(...[...css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)].map(m=>m[1]));
 for(const scene of scenes)refs.push(scene.before,scene.after,scene.thumb);
 for(const feature of features)refs.push(feature.before,feature.after);

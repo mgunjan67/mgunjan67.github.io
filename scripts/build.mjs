@@ -4,7 +4,7 @@ const root=process.cwd(), output=path.join(root,'dist');
 if(path.relative(root,output)!=='dist')throw new Error('Refusing to clean an unexpected build directory.');
 await rm(output,{recursive:true,force:true});
 await mkdir(output,{recursive:true});
-for(const file of ['index.html','photo-finisher.html','angelswing.html','styles.css','showcase.js','app.js','photo-lab.js','.nojekyll','robots.txt','sitemap.xml']) await copyFile(path.join(root,file),path.join(output,file));
+for(const file of ['index.html','photo-finisher.html','angelswing.html','styles.css','visual.css','showcase.js','app.js','photo-lab.js','.nojekyll','robots.txt','sitemap.xml']) await copyFile(path.join(root,file),path.join(output,file));
 const publicContent=JSON.parse(await readFile(path.join(root,'public-content.json'),'utf8'));
 for(const asset of publicContent.assets){const target=path.resolve(output,asset);const relative=path.relative(output,target);if(relative.startsWith('..')||path.isAbsolute(relative))throw new Error('Invalid public asset path.');await mkdir(path.dirname(target),{recursive:true});await copyFile(path.join(root,asset),target);}
 let bytes=0,count=0;

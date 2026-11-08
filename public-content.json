@@ -89,7 +89,10 @@
     "media/features/wall-finish.webp",
     "media/features/staging.webp",
     "media/spatial-study.svg",
-    "media/progress-study.svg"
+    "media/progress-study.svg",
+    "media/avatars/gunjan-thinking.webp",
+    "media/avatars/gunjan-building.webp",
+    "media/avatars/gunjan-hello.webp"
   ],
   "sources": {
     "landslide": [
@@ -445,6 +448,24 @@
     "media/progress-study.svg": {
       "kind": "Original generic workflow illustration",
       "notes": "Invented geometry. No employer or customer imagery or data."
+    },
+    "media/avatars/gunjan-thinking.webp": {
+      "kind": "User-requested avatar pose variation",
+      "reference": "media/gunjan-avatar-3d.webp",
+      "tool": "Built-in image_gen",
+      "notes": "Same character; thinking, laptop-building, or greeting pose. Transparent background preserved."
+    },
+    "media/avatars/gunjan-building.webp": {
+      "kind": "User-requested avatar pose variation",
+      "reference": "media/gunjan-avatar-3d.webp",
+      "tool": "Built-in image_gen",
+      "notes": "Same character; thinking, laptop-building, or greeting pose. Transparent background preserved."
+    },
+    "media/avatars/gunjan-hello.webp": {
+      "kind": "User-requested avatar pose variation",
+      "reference": "media/gunjan-avatar-3d.webp",
+      "tool": "Built-in image_gen",
+      "notes": "Same character; thinking, laptop-building, or greeting pose. Transparent background preserved."
     }
   },
   "authorization": {
