@@ -2,7 +2,7 @@ import {readFile,readdir} from 'node:fs/promises';
 import {existsSync} from 'node:fs';
 import {runInNewContext,Script} from 'node:vm';
 import path from 'node:path';
-const root=process.cwd(),errors=[],files=['index.html','photo-finisher.html','angelswing.html'];
+const root=process.cwd(),errors=[],files=['index.html','photo-finisher.html','spatial-work.html'];
 const pages=new Map(await Promise.all(files.map(async file=>[file,await readFile(file,'utf8')])));
 const assets=JSON.parse(await readFile('public-content.json','utf8'));
 const allowlist=new Set(assets.assets),context={window:{}};
@@ -27,7 +27,7 @@ for(const [file,html] of pages){
 }
 const css=(await Promise.all(['styles.css','visual.css'].map(f=>readFile(f,'utf8')))).join('\n');
 const homeAvatars=[...pages.get('index.html').matchAll(/src="(media\/(?:avatars\/gunjan-[^"]+|gunjan-avatar-3d)\.webp)"/g)].map(m=>m[1]);
-if(new Set(homeAvatars).size!==4)errors.push('Homepage must use the original avatar and three distinct pose variants');
+if(new Set(homeAvatars).size!==4)errors.push('Homepage must use the selected portrait and three distinct pose variants');
 refs.push(...[...css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)].map(m=>m[1]));
 for(const scene of scenes)refs.push(scene.before,scene.after,scene.thumb);
 for(const feature of features)refs.push(feature.before,feature.after);
