@@ -1,0 +1,46 @@
+{
+  "description": "Public-source portfolio content and explicit deployment asset list.",
+  "assets": [
+    "media/favicon.svg",
+    "media/social-cover.jpg",
+    "media/social-cover.svg",
+    "media/fonts/dm-sans-latin.woff2",
+    "media/fonts/instrument-serif-latin.woff2",
+    "media/fonts/instrument-serif-italic-latin.woff2",
+    "media/fonts/DM-Sans-OFL.txt",
+    "media/fonts/Instrument-Serif-OFL.txt",
+    "media/gunjan-avatar-3d.webp"
+  ],
+  "sources": {
+    "landslide": [
+      "https://egusphere.copernicus.org/preprints/2026/egusphere-2026-4315/",
+      "https://github.com/mgunjan67/das-himalayan-geohazard-ai"
+    ],
+    "runoff": [
+      "https://eartharxiv.org/repository/view/10851/"
+    ],
+    "emotion": [
+      "https://doi.org/10.36227/techrxiv.175416003.30236370/v1",
+      "https://github.com/mgunjan67/EmojiFaceChat"
+    ],
+    "atlas": [
+      "https://github.com/mgunjan67/atlas-compliance"
+    ],
+    "coherencygraph": [
+      "https://github.com/mgunjan67/coherencygraph-das",
+      "https://github.com/mgunjan67/coherencygraph-das/releases"
+    ],
+    "ball-vision": [
+      "https://github.com/mgunjan67/ball_detection_yolov9_custom"
+    ],
+    "signal-sketch": []
+  },
+  "visualProvenance": {
+    "media/gunjan-avatar-3d.webp": {
+      "kind": "Original user-requested 3D avatar generation",
+      "reference": "https://www.instagram.com/gaurav.__.gunjan/",
+      "tool": "Built-in image_gen",
+      "notes": "Source photographs are not included in the deployment."
+    }
+  }
+}
