@@ -4,7 +4,7 @@ The user selected a new portrait likeness on 2026-11-08. Use that face in the he
 
 # Portfolio content boundary
 
-The user chose all three visual directions: cinematic dark, bold editorial, and playful 3D. Lead with functional photo comparison and an explorable original spatial scene. Keep the text short. The spatial scene must use invented illustrative geometry, distinct from employer output or customer data.
+The user selected Gallery on 2026-11-14: warm ivory, restrained cobalt accents, editorial serif typography, and a project-first composition. Match the approved Gallery preview. Keep the introductory portrait compact so the two large functional project showcases lead the page. Preserve the photo comparison and original explorable spatial scene; its geometry must remain invented and distinct from employer output or customer data.
 
 The user's latest design direction is a concise portfolio. Keep the homepage curated and visual: brief project captions, a short research list, a small bio, and contact. Put collections and optional explorations on project pages. Avoid expanding the homepage into detailed project reports, capability catalogs, process sections, or repeated badges.
 

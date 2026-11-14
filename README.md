@@ -1,6 +1,6 @@
 # Gunjan Mishra — Portfolio
 
-A concise portfolio combining a cinematic dark opening, bold editorial chapters, and playful 3D character art. Interactive work showcases lead into three research entries, a short bio, and contact. Detailed photo browsing remains on its own project page.
+A concise portfolio in the user-selected Gallery theme: warm ivory, cobalt accents, and editorial serif typography. A compact portrait introduction leads into two large interactive project showcases, followed by three public research entries, a short bio, and contact. The full photo collection remains on its project page.
 
 ## Run
 
@@ -19,7 +19,7 @@ The static pages work at a GitHub Pages repository root. The build cleans `dist/
 - `index.html`: introduction, interactive Photo Finisher and spatial intelligence showcases, public research, bio, contact.
 - `photo-finisher.html`: 25 user-approved saved comparisons, scene filters, keyboard gallery navigation, and optional feature/style explorations in closed disclosures.
 - `spatial-work.html`: brief summaries of spatial understanding and construction-progress work, with original generic illustrations.
-- `styles.css`: shared layout and photo interactions. `visual.css`: cinematic/editorial composition, interactive scenes, and responsive character placements.
+- `styles.css`: shared layout and photo interactions. `visual.css`: Gallery typography and colors, project presentation, interactive scenes, and responsive character placements.
 - `experience.js`: homepage photo comparison and an original 3D renderer with pointer/keyboard rotation and illustrative construction-progress control. All geometry is invented; the scene renders only on interaction or resize.
 - `app.js`: responsive navigation and optional pointer depth. `photo-lab.js` and `showcase.js`: photo interactions and neutral scene data.
 - `projects.js`: source-backed content reference retained for provenance; the previous long project-note interface is no longer used or deployed.
@@ -30,4 +30,4 @@ The user approved high-level spatial intelligence summaries and the photo collec
 
 The three feature concepts were generated with ImageGen and are identified separately from the 25 saved pipeline results. The 24 style directions are browser color-grade previews, not production preset claims. Core product finishes are Bright natural, Soft natural, and Warm natural.
 
-The portrait selected by the user on 2026-11-08 leads the hero. The thinking, laptop, and greeting poses were rebuilt with built-in ImageGen using that selected face as the identity reference. They appear in research, about, contact, and project introductions. Company and workplace names, employment wording, and the CV request are removed from the portfolio. Raw portrait references are not deployed. Pointer depth is disabled for reduced-motion preferences and touch devices. Research entries link directly to their public preprints. Contact links open email; the site uses no analytics or third-party runtime requests.
+The portrait selected by the user on 2026-11-08 remains unchanged and leads the compact introduction. The Gallery theme was selected on 2026-11-14. The thinking, laptop, and greeting poses were rebuilt with built-in ImageGen using that selected face as the identity reference. They appear in research, about, contact, and project introductions. Company and workplace names, employment wording, and the CV request are removed from the portfolio. Raw portrait references are not deployed. Pointer depth is disabled for reduced-motion preferences and touch devices. Research entries link directly to their public preprints. Contact links open email; the site uses no analytics or third-party runtime requests.

@@ -2,7 +2,7 @@
   "name": "gunjan-research-products-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Cinematic portfolio with interactive photo and spatial showcases, research, and contextual avatars.",
+  "description": "Gallery portfolio with large interactive project showcases, public research, and the selected portrait avatar.",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
