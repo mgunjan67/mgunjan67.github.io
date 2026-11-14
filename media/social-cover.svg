@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><style>@font-face{font-family:GallerySerif;src:url('fonts/instrument-serif-latin.woff2')}@font-face{font-family:GallerySerif;src:url('fonts/instrument-serif-italic-latin.woff2');font-style:italic}.serif{font-family:GallerySerif,Georgia,serif}</style><clipPath id="photo"><rect x="60" y="450" width="600" height="120"/></clipPath><clipPath id="spatial"><rect x="684" y="450" width="456" height="120"/></clipPath></defs>
+<rect width="1200" height="630" fill="#f4f0e8"/>
+<text x="60" y="62" class="serif" font-size="34" fill="#252b2b">gunjan<tspan fill="#3349b6">.</tspan></text>
+<text x="1140" y="58" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#686960" letter-spacing="1.3">RESEARCH × PRODUCTS</text>
+<path d="M60 85H1140" stroke="#d6d1c7"/>
+<text x="62" y="155" font-family="Arial,sans-serif" font-size="11" fill="#686960" letter-spacing="1.5">GUNJAN MISHRA / IDEAS, EXPLORED &amp; BUILT</text>
+<text x="58" y="264" class="serif" font-size="116" fill="#252b2b" letter-spacing="-2">Research,</text>
+<text x="58" y="366" class="serif" font-size="110" font-style="italic" fill="#3349b6" letter-spacing="-2">made useful.</text>
+<text x="63" y="409" font-family="Arial,sans-serif" font-size="14" fill="#686960">Useful AI for images, spaces, and ideas.</text>
+<path d="M790 413V250a162 162 0 0 1 324 0v163Z" fill="#ded6c5" transform="rotate(3 950 300)"/>
+<image href="gunjan-avatar-3d.webp" x="790" y="100" width="324" height="317" preserveAspectRatio="xMidYMax meet"/>
+<image href="photos/scene-02-thumb.webp" x="60" y="350" width="600" height="400" preserveAspectRatio="xMidYMid slice" clip-path="url(#photo)"/>
+<rect x="684" y="450" width="456" height="120" fill="#1b3035"/>
+<image href="spatial-study.svg" x="760" y="408" width="290" height="210" clip-path="url(#spatial)"/>
+<rect x="71" y="535" width="578" height="25" fill="#f4f0e8" fill-opacity=".94"/>
+<text x="83" y="552" font-family="Arial,sans-serif" font-size="11" fill="#252b2b">Photo Finisher</text>
+<rect x="695" y="535" width="434" height="25" fill="#f4f0e8" fill-opacity=".94"/>
+<text x="707" y="552" font-family="Arial,sans-serif" font-size="11" fill="#252b2b">Space &amp; time</text>
+<text x="60" y="605" font-family="Arial,sans-serif" font-size="10" fill="#686960">Gunjan Kumar Mishra</text>
+<text x="1140" y="605" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#3349b6">LET’S TALK ↗</text>
+</svg>
